@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="study.org.myapplication.MainActivity">
+
+    <Button
+        android:id="@+id/btnVibrateMode"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:onClick="makePhoneVibrate"
+        android:text="Activate Vibrate Mode"
+        android:textColor="@color/white"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/btnRingerMode"
+        android:layout_alignStart="@+id/btnRingerMode">
+    </Button>
+
+    <Button
+        android:id="@+id/btnRingerMode"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:background="@color/red"
+        android:onClick="makePhoneRinger"
+        android:text="Activate Ringer Mode"
+        android:textColor="@color/white"
+        android:layout_alignBottom="@+id/btnVibrateMode"
+        android:layout_alignLeft="@+id/btnSilentMode"
+        android:layout_alignStart="@+id/btnSilentMode">
+    </Button>
+
+    <Button
+        android:id="@+id/btnSilentMode"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:background="@color/red"
+        android:onClick="makePhoneSilent"
+        android:text="Activate Silent Mode"
+        android:textColor="@color/white"
+        android:layout_above="@+id/btnRingerMode"
+        android:layout_centerHorizontal="true">
+    </Button>
+
+
+</RelativeLayout>
